@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;   
+            margin: 0;
+        }
+        nav{
+            background: lightcoral;
+            width: 20vh;
+            height: 95vh;
+        }
+        header{
+            width: 179vh;
+            height: 20vh;
+            background: lightblue;
+        }
+        footer{
+            width: 179vh;
+            height: 20vh;
+            background: lightsalmon;
+        }
+        .main{
+            display: flex;
+        }
+        .main article{
+            width: 154vh;
+            height: 45vh;
+        }
+        .main aside{
+            background: lightgreen;
+            height: 45vh ;
+            width: 20vh;
+        }
+        nav, header, footer, article, aside{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <nav><h3>Nav</h3></nav>
+    <div>
+    <header><h3>Header</h3></header>
+    <div class="main">
+        <article><h3>Article</h3></article>
+        <aside><h3>Aside</h3></aside>
+    </div>
+    <footer><h3>Footer</h3></footer>
+    </div>
+</body>
+</html>

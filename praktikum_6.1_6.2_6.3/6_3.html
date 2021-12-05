@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .part {
+        width: 100%;
+        height: 100px;
+        background-color: lightgreen;
+        border-radius: 10px;
+        box-shadow: 3px 5px 7px;
+      }
+      h1 {
+        text-align: center;
+        color: navy;
+      }
+      .part1 {
+        margin-top: 13px;
+        width: 30%;
+        height: 440px;
+        background-color: lightsteelblue;
+        border-radius: 10px;
+        box-shadow: 3px 5px 7px;
+      }
+      .part2 {
+        margin-top: 13px;
+        width: 69%;
+        height: 440px;
+        background-color: lightseagreen;
+        border-radius: 10px;
+        box-shadow: 3px 5px 7px;
+      }
+
+      .sub-part1 {
+        margin: 70px;
+      }
+
+      .sub-part2 {
+        display: flex;
+        margin: 10px;
+      }
+      .sub-part2 > div {
+        margin: 10px;
+      }
+      .sub-part2 > div > img {
+        width: 100%;
+      }
+      .part3 {
+        margin-top: 13px;
+        width: 100%;
+        height: 100px;
+        background-color: lightslategrey;
+        border-radius: 10px;
+        box-shadow: 3px 5px 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="part">
+        <h1>Header</h1>
+      </div>
+      <div class="part1">
+
+        <h1>Article</h1>
+      </div>
+      <div class="part2">
+        <div class="sub-part1">
+          <h1>Content</h1>
+        </div>
+        <div class="sub-part2">
+          <div>
+            <img
+              src="https://cdn.idntimes.com/content-images/community/2021/08/fromandroid-ef16cae7e74bbf1499bd3eef808c6079.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn.idntimes.com/content-images/community/2021/08/fromandroid-ef16cae7e74bbf1499bd3eef808c6079.jpg"
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn.idntimes.com/content-images/community/2021/08/fromandroid-ef16cae7e74bbf1499bd3eef808c6079.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="part3">
+        <h1>Footer</h1>
+
+      </div>
+    </div>
+  </body>
+</html>
