@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Box</title>
+  </head>
+
+  <style>
+    #content_chat {
+      display: block;
+      border: 1px solid #000;
+      padding: 5px;
+      margin: 20px;
+      max-width: 100%;
+      height: 30vh;
+      overflow: auto;
+    }
+
+    .area {
+      margin: -17px 20px 0 20px;
+      max-width: 100%;
+      height: 30vh;
+    }
+
+    .area input {
+      width: 95%;
+    }
+  </style>
+
+  <body>
+    <h2 style="text-align: center">Chat Box</h2>
+
+    <div id="content_chat"></div>
+
+    <div class="area">
+      <input type="text" id="message" />
+      <button type="submit" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+      function sendMessage() {
+        var message = document.getElementById('message').value;
+        var sender = document.createElement('p');
+        var textNode = document.createTextNode(message);
+        sender.appendChild(textNode);
+        document.getElementById('content_chat').appendChild(sender);
+        document.getElementById('message').value = '';
+      }
+    </script>
+  </body>
+</html>

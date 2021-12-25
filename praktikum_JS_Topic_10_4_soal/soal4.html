@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Menghitung Jumlah Dua Bilangan</title>
+        <script>
+            function hitung(){
+                let a = Number(document.getElementById("angka1").value);
+                let b = Number(document.getElementById("angka2").value);
+                let c = a + b;
+                document.getElementById("angka3").value=c;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Menghitung Jumlah Dua Bilangan</h3>
+        <form id="frm1">
+            <input type="number" id="angka1" value="" onchange="hitung()"/>
+            <br/>
+            <b> + 
+            <br/>
+            </b><input type="text" id="angka2" value="" onchange="hitung()"/>
+            <br/>
+            <b> = 
+            <br/>
+            </b><input type="text" id="angka3" value=""/>
+        </form>
+    </body>
+</html>
+

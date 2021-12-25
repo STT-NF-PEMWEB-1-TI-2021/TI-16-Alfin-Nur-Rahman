@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>
+            Menghitung Kurs Rupiah
+        </title>
+        <script>
+            function hitung(){
+                let rp = Number(document.getElementById("rp").value);
+                let hasil = document.getElementById("hasil")
+                hasil.innerHTML = "$" + (rp / 14650);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="rp">
+        <button onclick="hitung()">hitung</button>
+        <div id="hasil"></div>
+    </body>
+</html>
